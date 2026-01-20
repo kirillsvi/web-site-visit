@@ -41,11 +41,23 @@
             font-size: 26px;
             font-weight: bold;
             color: white;
+            display: flex;
             text-decoration: none;
+            flex-direction: column;
+            line-height: 1.1;
+            text-align: center;
         }
-        .logo span {
-            color: #cccccc;
+        
+        .logo-line1 {
+            font-size: 28px;
+            letter-spacing: 1px;
         }
+        .logo-line2 {
+            font-size: 28px;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+
         nav ul {
             display: flex;
             list-style: none;
@@ -564,13 +576,21 @@
         body.modal-open {
             overflow: hidden;
         }
+        .logo-test {
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
     <!-- Шапка -->
     <header>
         <div class="container header-content">
-            <a href="#" class="logo">CONTROLPOINT</a>
+            <!-- <img class="logo-test" src="logo.png"> -->
+            <a href="#" class="logo">
+                <span class="logo-line1">CONTROL</span>
+                <span class="logo-line2">POINT</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="#services">Услуги</a></li>
@@ -598,10 +618,7 @@
             <div class="service-card">
                 <h3>Проверка ПВЗ супермаркетов и магазинов</h3>
                 <p>Специализированная услуга тайного покупателя для пунктов выдачи заказов (ПВЗ), супермаркетов и магазинов. Проверка дает возможность посмотреть на свой бизнес глазами клиента, получить достоверные сведения об уровне обслуживания, которые можно использовать для улучшения сервиса, мотивации персонала и создания позитивного имиджа.</p>
-                
-                <!-- Блок о работе без официального офиса -->
-                
-                
+
                 <p>Результат проверки — детализированный отчет, который станет основой для принятия управленческих решений.</p>
                 
                 <div class="service-features">
@@ -716,7 +733,7 @@
     <div class="modal-overlay" id="contacts-modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Контакты Control Service</h3>
+                <h3>Контакты Control Point</h3>
                 <button class="modal-close" id="modal-close">&times;</button>
             </div>
             <div class="modal-body">
